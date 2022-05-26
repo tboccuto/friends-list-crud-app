@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Friends App</title>
+        <meta name='viewport' content='width=device-width, initial-scal=1.0'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class='navbar navbar-inverse navbar-static-top' role='navigation'>
+          <div class='container'>
+            <div class="navbar-header">
+              <%= link_to 'Friend App', root_path, class:"navbar-brand" %>
+              <button class='navbar-toggle' data-toggle='collapse' data-target='.navHeaderCollapse'>
+                  <span class='icon-bar'></span>
+                  <span class='icon-bar'></span>
+                  <span class='icon-bar'></span>
+              </button>
+            </div>
+            <div class='collapse navbar-collapse navHeaderCollapse'>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li class='active'><a href='#'>Home</a></li>
+                    <li><a href='#'>Something</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
