@@ -11,20 +11,18 @@
   <hr class="my-4">
   <p class="display-5"> Social Media </p>
   <p> 
-      twitter: @<%= link_to @friend.twitter  , 'https://twitter.com/@friend.twitter'%>
+      twitter: @<%= link_to @friend.twitter  , 'https://twitter.com/'+@friend.twitter%>
   </p>
   
   <p>
-      instagram: @<%= link_to @friend.instagram, 'https://www.instagram.com/@friend.instagram/'%>
+      instagram: @<%= link_to @friend.instagram, 'https://www.instagram.com/'+@friend.instagram+'/'%>
   </p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 </div>
 
-<%= render @friend %>
 
-<div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
-  <%= link_to "Back to friends", friends_path %>
 
-  <%= button_to "Destroy this friend", @friend, method: :delete %>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class: "btn btn-outline-dark" %>
+  <%= link_to "Back to friends", friends_path , class: "btn btn-outline-dark" %>
+  <%= button_to "Destroy this friend", @friends, method: :delete , class: "btn btn-outline-dark" %>
 </div>

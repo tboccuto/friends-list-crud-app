@@ -9,6 +9,9 @@
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
+# Adding column to existing table in rails migration 
+# Here is a helpful link
+# https://stackoverflow.com/questions/4834809/adding-a-column-to-an-existing-table-in-a-rails-migration
 
 ActiveRecord::Schema[7.0].define(version: 2022_05_26_023453) do
   create_table "friends", force: :cascade do |t|
