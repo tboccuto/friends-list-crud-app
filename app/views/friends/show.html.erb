@@ -1,5 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
+<div class="jumbotron">
+  <h1 class="display-4"><%= @friend.first_name %>
+                        <%= @friend.last_name %></h1>
+
+  <p class="lead"> <%= @friend.email %>
+                  <%= @friend.phone %>
+    
+  </p>
+  <hr class="my-4">
+  <p class="display-5"> Social Media </p>
+  <p> 
+      twitter: @<%= link_to @friend.twitter  , 'https://twitter.com/@friend.twitter'%>
+  </p>
+  
+  <p>
+      instagram: @<%= link_to @friend.instagram, 'https://www.instagram.com/@friend.instagram/'%>
+  </p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
 <%= render @friend %>
 
 <div>
