@@ -4,18 +4,11 @@
   <h1 class="display-4"><%= @friend.first_name %>
                         <%= @friend.last_name %></h1>
 
-  <p class="lead"> <%= @friend.email %>
-                  <%= @friend.phone %>
+  <p class="lead"> <%= @friend.email %> |
+                  <%= @friend.phone %> |
+                  twitter: @<%= link_to @friend.twitter  , 'https://twitter.com/'+@friend.twitter%> |
+                  instagram: @<%= link_to @friend.instagram, 'https://www.instagram.com/'+@friend.instagram+'/'%>
     
-  </p>
-  <hr class="my-4">
-  <p class="display-5"> Social Media </p>
-  <p> 
-      twitter: @<%= link_to @friend.twitter  , 'https://twitter.com/'+@friend.twitter%>
-  </p>
-  
-  <p>
-      instagram: @<%= link_to @friend.instagram, 'https://www.instagram.com/'+@friend.instagram+'/'%>
   </p>
 </div>
 
