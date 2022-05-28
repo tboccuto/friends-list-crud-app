@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :friends
   #get 'home/index'
   #each page need controller ie in terminal type [rails g controller home index]
