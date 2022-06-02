@@ -8,6 +8,7 @@
       <th>Twitter</th>
       <th>Instagram</th>
       <th>Profile</th>
+      <th>User Id</th>
     </tr>
   </thead>
 
@@ -24,6 +25,7 @@
       <td><%= friend.twitter %></td>
       <td><%= friend.instagram %></td>
       <td><%= link_to friend.first_name+'_'+friend.last_name, friend %></td>
+      <td><%= friend.user_id %> </td>
   </tr>
   <% end %>
 </tbody>

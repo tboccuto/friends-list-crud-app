@@ -2,7 +2,8 @@
   <h1 class="display-4"><%= @friend.first_name %>
                         <%= @friend.last_name %></h1>
 
-  <p class="lead"> <%= @friend.email %> |
+  <p class="lead">
+                  <%= @friend.email %> |
                   <%= @friend.phone %> |
                   twitter: @<%= link_to @friend.twitter  , 'https://twitter.com/'+@friend.twitter%> |
                   instagram: @<%= link_to @friend.instagram, 'https://www.instagram.com/'+@friend.instagram+'/'%>
@@ -12,8 +13,11 @@
 
 
 <div class="btn-group" role="group" aria-label="Basic example">
+  <% if @friend.user != current_user %>
   <%= link_to "Edit this friend", edit_friend_path(@friend), class: "btn btn-outline-dark" %>
+  <% else %>
   <%= link_to "Back to friends", friends_path , class: "btn btn-outline-dark" %>
   <%= button_to "Remove Friend", @friends, method: :delete , class: "btn btn-outline-dark" %>
+  <% end %>
 </div>
 <br><br>
