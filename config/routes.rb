@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   
-  devise_for :users do
-  get '/users/sign_out' => 'devise/sessions#destroy' #hint look at rails routes, out of box does not work!
-  get'users/sign_in' => 'devise/sessions#new' #hint look at rails routes
+  #devise_for :users  do
+  #get '/users/sign_out' => 'devise/sessions#destroy' #hint look at rails routes, out of box does not work!
+  #get'users/sign_in' => 'devise/sessions#new' #hint look at rails routes
 
-end
+  devise_for :users, controllers: { registrations: "registrations" }
+
+#end
 
   #devise_for :users, controllers: { registrations: "registrations" }
   resources :friends
