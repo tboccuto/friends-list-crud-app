@@ -9,7 +9,7 @@
 
 - Friend params require [:first_name, :last_name, :email, :phone, :twitter, :instagram, :user_id)] w/ user_id type :hidden where user_id is generated as generic unique index via migration
 
-* Database creation
+ ### Database creation
  - Database 'Friends' {    
     t.string "first_name"
     t.string "last_name"
