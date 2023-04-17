@@ -20,7 +20,18 @@
 
 - check [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
+### deploy to EB
 
+- create an environment for docker linux 2, then deploy it and see what happens?
+
+   ```bash
+   eb init -i --profile=...
+   eb status --profile=...
+   eb deploy --profile=...
+   ```
+   - checkout the endpoint on eb
+
+   
 ## Friends list is a create, read, update , delete [destroy] application built with Ruby on Rails --version [7.0]. Simply sign up for an account, and then you can add other users and link their social media accounts to their profile.
 
 * Ruby version ~ ruby 3.0.1p64  [x86_64-darwin20]
