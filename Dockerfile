@@ -9,7 +9,7 @@ RUN gem install sqlite3 -v '1.4.2' --source 'https://rubygems.org/'
 RUN bundle install
 COPY . .
 
-RUN rails db:migrate RAILS_ENV=development
+#RUN rails db:migrate RAILS_ENV=development
 
 EXPOSE 3000
 
