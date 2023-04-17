@@ -29,7 +29,7 @@
    eb status --profile=...
    eb deploy --profile=...
    ```
-   - checkout the endpoint on eb
+- checkout the endpoint on eb.. if it fails for a bad dev DNS name, edit your `config/environments/development.rb` for the staging domain.. it's just for testing of course
 
    
 ## Friends list is a create, read, update , delete [destroy] application built with Ruby on Rails --version [7.0]. Simply sign up for an account, and then you can add other users and link their social media accounts to their profile.
