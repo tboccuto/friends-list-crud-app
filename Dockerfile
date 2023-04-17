@@ -4,7 +4,7 @@ RUN apt-get update && \
 apt-get install ubuntu-dev-tools libsqlite3-dev -y
 
 WORKDIR /app
-COPY Gemfile ./
+COPY Gemfile* ./
 RUN gem install sqlite3 -v '1.4.2' --source 'https://rubygems.org/'
 RUN bundle install
 COPY . .
