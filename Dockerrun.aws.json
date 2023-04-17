@@ -1,0 +1,13 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Logging": "/tmp/sample-app",
+    "Image": {
+        "Update": "false"
+    },
+    "Volumes": [
+        {
+        "HostDirectory": "/var/app/current/db",
+        "ContainerDirectory": "/app/db"
+        }
+    ]
+}
