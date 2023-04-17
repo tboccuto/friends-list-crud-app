@@ -1,7 +1,27 @@
 # Friends List Crud App
 
-## Friends list is a create, read, update , delete [destroy] application built with Ruby on Rails --version [7.0]. Simply sign up for an account, and then you can add other users and link their social media accounts to their profile.
+## Getting Started
 
+- run commands for local dev:
+
+   ```bash
+   bundle install --path vendor/bundle
+   
+   rails server -b 0.0.0.0
+   ```
+
+- run commands for local Docker:
+
+   ```bash
+   docker build ./ -t cruddy-friends
+
+   docker run --network=host --mount type=bind,source="$(pwd)"/db,target=/app/db cruddy-friends
+   ```
+
+- check [http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+
+## Friends list is a create, read, update , delete [destroy] application built with Ruby on Rails --version [7.0]. Simply sign up for an account, and then you can add other users and link their social media accounts to their profile.
 
 * Ruby version ~ ruby 3.0.1p64  [x86_64-darwin20]
 
